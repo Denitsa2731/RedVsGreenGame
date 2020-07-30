@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentormate Green VS Red Game</title>
+</head>
+
+<body>
+    <h1>Mentormate Green VS Red Game</h1>
+    <div>
+        <div>
+            <h3>Select the size of the grid:</h3>
+            <div>
+                <input type="text" placeholder="rows" id="x">
+                <input type="text" placeholder="cols" id="y">
+                <input type="button" value='Set Grid' onclick="setGrid()"></input>
+                <Input type='button' id='btnreset' value='Reset Grid' onclick='resetGrid();'>
+            </div>
+            <h3>Select coordinates:</h3>
+            <div>
+                <input type="text" placeholder="x1" id="x1">
+                <input type="text" placeholder="y1" id="y1">
+                <button type="button" onclick="getInputValues()">Set Coordinates</button>
+            </div>
+            <h3>Generate Result</h3>
+            <input type="text" placeholder="timesGenerated" id="timesGenerated">
+            <input type='button' value='Generate' onclick='generateResult()' .>
+        </div>
+        <div>
+            <h1>Result:</h1>
+            <div id='world'>
+                <p>Generations: <a id="clicks">0 </a></p>
+                <p> [<a id="x11">0</a>,<a id="y11">0</a>] Changed: <a id="changes">0 Times</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
